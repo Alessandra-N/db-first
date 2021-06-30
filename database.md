@@ -1,0 +1,33 @@
+# Database rivendita di auto usate
+## (table) Automobili usate
+
+- id                            BIGINT PRIMARY KEY UNIQUE NOTNULL INDEX
+- marca                         VARCHAR (30) NOTNULL
+- modello                       VARCHAR (30) NOTNULL
+- prezzo                        MEDIUMINT NOTNULL
+- anno di immatricolazione      YEAR NOTNULL
+- chilometraggio                MEDIUMINT NULL
+- (!)comfort                    VARCHAR (50) NULL
+- luci e visuale                VARCHAR (50) NULL
+- sistema multimediale          VARCHAR (50) NULL
+- sicurezza                     VARCHAR (50) NULL
+- potenza                       SMALLINT NULL
+- carburante                    VARCHAR (20) NOTNULL
+- tipo di carrozzeria           VARCHAR (20) NULL
+- numero di portiere            VARCHAR (3) NULL
+- numero di sedili              TINYINT NULL
+- materiale degli interni       VARCHAR (20) NULL
+- colore dell'esterno           VARCHAR (20) NULL
+- tipo di colore                VARCHAR (20) NULL
+- paese di origine              VARCHAR (30) NULL
+- targa                         VARCHAR (10) UNIQUE NOTNULL
+- ultima manutenzione           DATE NULL
+- incidentata e riparata        TINYINT NULL
+- revisione valida fino a       DATE NULL
+- motore originale              TINYINT NULL
+- classe emissioni              VARCHAR(10) NULL
+- set pneumatici                VARCHAR(15) NULL
+- numero di inventario          VARCHAR(10) UNIQUE NOTNULL
+- cilindrata                    TINYINT NULL
+- emissioni di co2              TINYINT NULL
+- tipologia di IVA              TINYINT NULL
